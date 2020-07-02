@@ -1,3 +1,5 @@
+package example.Point;
+
 import java.util.Objects;
 
 public class LabeledPoint extends Point {

@@ -1,3 +1,7 @@
+package example.Shape;
+
+import example.Point.Point;
+
 public class Circle extends Shape {
     private double radius;
 

@@ -1,3 +1,7 @@
+package example.Shape;
+
+import example.Point.Point;
+
 public class Rectangle extends Shape {
     private double width;
     private double height;
