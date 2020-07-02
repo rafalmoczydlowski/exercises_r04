@@ -1,6 +1,9 @@
 import example.Point.*;
 import example.Shape.*;
 
+import static java.lang.Math.pow;
+import static java.lang.Math.sqrt;
+
 public class PointTest {
     public static void main(String[] args) {
         final String ACTION_1 = "The center of the figure is at the point: ";
@@ -29,6 +32,7 @@ public class PointTest {
         System.out.println("Width: " + rectangle.getWidth());
         System.out.println("Height: " + rectangle.getHeight());
         System.out.println(ACTION_1 + rectangle.getCenter());
+        System.out.println(rectangle.getArea());
         rectangle.moveBy(10, 10);
         System.out.println("New rectangle created. " + ACTION_1 + rectangle.getCenter());
         System.out.println("==========CIRCLE=========");
@@ -37,5 +41,12 @@ public class PointTest {
         System.out.println("Y: " + circle.point.getY());
         System.out.println("X: " + circle.getRadius());
         System.out.println(ACTION_1 + circle.getCenter());
+        System.out.println(circle.getArea());
+        System.out.println("==========SQUARE=========");
+        Square square = new Square(new Point(11, 10), 11);
+        System.out.println("X: " + square.point.getX());
+        System.out.println("Y: " + square.point.getY());
+        System.out.println(square.getCenter());
+        System.out.println(square.getArea());
     }
 }

@@ -27,4 +27,9 @@ public class Line extends Shape {
         this.from = new Point(this.from.getX() + xd, this.from.getY() + yd);
         this.to = new Point (this.to.getX() + xd, this.from.getY() + yd);
     }
+
+    @Override
+    public double getArea() {
+        return 0;
+    }
 }

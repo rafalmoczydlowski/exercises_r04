@@ -21,7 +21,7 @@ public class Point {
 
     @Override
     public String toString() {
-        return getClass().getName() + " [X: " + x + ", Y: " + y + "]";
+        return "[X: " + x + ", Y: " + y + "]";
     }
 
     @Override
