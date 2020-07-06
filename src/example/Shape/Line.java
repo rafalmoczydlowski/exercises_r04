@@ -17,6 +17,11 @@ public class Line extends Shape {
     }
 
     @Override
+    public Line clone(){
+        return new Line(this.from, this.to);
+    }
+
+    @Override
     public Point getCenter() {
         return this.point;
     }

@@ -13,6 +13,10 @@ public class Rectangle extends Shape {
     }
 
     @Override
+    public Rectangle clone(){
+        return new Rectangle(this.point, this.width, this.height);
+    }
+    @Override
     public Point getCenter() {
         var x = (2 * this.point.getX() + this.width) / 2;
         var y = (2 * this.point.getY() + this.height) / 2;

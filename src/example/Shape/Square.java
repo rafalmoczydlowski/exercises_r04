@@ -12,6 +12,10 @@ public class Square extends Shape {
         this.squareSide = squareSide;
     }
 
+    public Square clone() {
+        return new Square(this.point, this.squareSide);
+    }
+
     @Override
     public Point getCenter() {
         var a = (squareSide * sqrt(2))/2;

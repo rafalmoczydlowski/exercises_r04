@@ -1,9 +1,6 @@
 import example.Point.*;
 import example.Shape.*;
 
-import static java.lang.Math.pow;
-import static java.lang.Math.sqrt;
-
 public class PointTest {
     public static void main(String[] args) {
         final String ACTION_1 = "The center of the figure is at the point: ";

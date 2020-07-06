@@ -15,6 +15,11 @@ public class LabeledPoint extends Point {
     }
 
     @Override
+    public LabeledPoint clone() {
+        return new LabeledPoint(this.label, super.getX(), super.getY());
+    }
+
+    @Override
     public String toString() {
         return super.toString() + " [Label: " + label + "]";
     }

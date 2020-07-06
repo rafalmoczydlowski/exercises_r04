@@ -2,7 +2,7 @@ package example.Point;
 
 import java.util.Objects;
 
-public class Point {
+public class Point implements Cloneable {
     private double x;
     private double y;
 
@@ -36,5 +36,10 @@ public class Point {
     @Override
     public int hashCode(){
         return Objects.hash(x, y);
+    }
+
+    @Override
+    public Point clone() {
+        return new Point(this.x, this.y);
     }
 }

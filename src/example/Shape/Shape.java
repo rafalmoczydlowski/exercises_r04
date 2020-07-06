@@ -2,7 +2,7 @@ package example.Shape;
 
 import example.Point.Point;
 
-public abstract class Shape {
+public abstract class Shape implements Cloneable{
 
     public Point point;
 
@@ -17,4 +17,8 @@ public abstract class Shape {
     public abstract Point getCenter();
 
     public abstract double getArea();
+
+    public Shape clone() throws CloneNotSupportedException {
+        return (Shape) super.clone();
+    }
 }
